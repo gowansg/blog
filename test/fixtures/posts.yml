@@ -4,7 +4,7 @@ one:
   id: 
   title: MyString
   published: false
-  published_at: 2012-01-16 22:26:04
+  published_at: 2012-01-21 00:10:44
   comments_allowed: false
   content: MyText
 
@@ -12,6 +12,6 @@ two:
   id: 
   title: MyString
   published: false
-  published_at: 2012-01-16 22:26:04
+  published_at: 2012-01-21 00:10:44
   comments_allowed: false
   content: MyText

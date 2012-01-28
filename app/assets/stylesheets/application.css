@@ -3,5 +3,55 @@
  * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
  * the top of the compiled file, but it's generally better to create a new file per style scope.
  *= require_self
- *= require_tree . 
-*/
+ *= require_tree .
+ */
+body {
+	background-color: #2e2e2e;
+	max-width: 1000px;
+	font-family: Georgia;
+	padding: 5px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+h1 {
+	margin: 0px;
+}
+nav {
+	/*background-color: #2e2e2e;*/
+	float: left;
+	margin: 5px;
+}
+nav a, a:link {
+	text-decoration: none;
+	margin: 5px;
+	color: white;
+}
+nav a:hover {
+	color: black;
+}
+#header {
+	background-color: #232245;
+	height: 150px;
+	color: #f2f2f2;
+	padding: 10px;
+}
+#navigation {
+	background-color: #005500;
+	height: 35px;
+}
+#content {
+	background-color: #dfdfdf;
+	height: 100%;
+	padding: 20px;
+	margin: 0px;
+}
+#post {
+	text-align: left;
+}
+#footer {
+	background-color: #232245;
+	color: #f2f2f2;
+	height: 100px;
+	padding: 10px;
+}
