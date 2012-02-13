@@ -6,52 +6,76 @@
  *= require_tree .
  */
 body {
-	background-color: #2e2e2e;
+	background-color: #3e3e3e;
 	max-width: 1000px;
 	font-family: Georgia;
 	padding: 5px;
-	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	/*background: -moz-linear-gradient(top, #a1e048, #0a940f);
+  	background: -ms-linear-gradient(top, #a1e048, #0a940f);
+  	background: -o-linear-gradient(top, #a1e048, #0a940f);
+  	background: -webkit-radial-gradient(center, #a1e048, #0a940f);
+  	background: linear-gradient(top, #a1e048, #0a940f);*/
 }
-h1 {
-	margin: 0px;
-}
+
+h1 {}
+
 nav {
 	/*background-color: #2e2e2e;*/
 	float: left;
-	margin: 5px;
+	width: 100%;
+	background-color: #005500;
+	background: -moz-linear-gradient(top, #a1e048, #0a940f);
+  	background: -ms-linear-gradient(top, #a1e048, #0a940f);
+  	background: -o-linear-gradient(top, #a1e048, #0a940f);
+  	background: -webkit-linear-gradient(top, #a1e048, #0a940f);
+  	background: linear-gradient(top, #a1e048, #0a940f);
 }
+
+nav ul{
+	float: left;
+	list-style: none;
+	display: inline-block;
+}
+
+nav ul li{
+	float: left;
+}
+
 nav a, a:link {
 	text-decoration: none;
 	margin: 5px;
 	color: white;
 }
+
 nav a:hover {
 	color: black;
 }
-#header {
-	background-color: #232245;
+
+header {
+	background-color: #263347;
 	height: 150px;
 	color: #f2f2f2;
 	padding: 10px;
+	text-align: center;
+	border-radius: 10px 10px 0px 0px;
 }
-#navigation {
-	background-color: #005500;
-	height: 35px;
-}
+
 #content {
 	background-color: #dfdfdf;
 	height: 100%;
 	padding: 20px;
 	margin: 0px;
 }
-#post {
-	text-align: left;
-}
-#footer {
-	background-color: #232245;
+
+#post {}
+
+footer {
+	background-color: #263347;
 	color: #f2f2f2;
 	height: 100px;
 	padding: 10px;
+	text-align: center;
+	border-radius: 0px 0px 10px 10px;
 }

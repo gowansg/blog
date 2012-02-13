@@ -7,22 +7,22 @@
 		<%= csrf_meta_tags %>
 	</head>
 	<body>
-		<div id="header">
+		<header>
 			<h1>My Blog Name</h1>
-		</div>
-		<div id="navigation">
+		</header>
 			<nav>
-				<a href="/home/">Home</a>
-				<a href="/posts/">Posts</a>
-				<a href="/about/">About</a>
-				<a href="/resume/">Resume</a>
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/posts/">Posts</a></li>
+					<li><a href="/about/">About</a></li>
+					<li><a href="/resume/">Resume</a></li>
+				</ul>
 			</nav>
-		</div>
 		<div id="content">
 			<%= yield %>
 		</div>
-		<div id="footer">
+		<footer>
 			</h1>Some footer text</h1>
-		</div>
+		</footer>
 	</body>
 </html>
