@@ -1,3 +1,4 @@
+require 'rubygems'
 require 'sinatra'
 
 set :public_folder, File.join(root, "_site")
