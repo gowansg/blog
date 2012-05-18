@@ -1,13 +1,13 @@
 require 'rubygems'
 require 'sinatra'
 
-set :public_folder, File.join(root, "_site")
+set :public_folder, File.join(__FILE__, "_site")
 
 #before do
 	#response.headers['Cache-Control'] = 'public, max-age='
 #end
 
-get '/' do
-	'index.html'
+get '/*' do |path|
+	File.read("_site/#{path}")
 end
 
