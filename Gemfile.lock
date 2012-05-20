@@ -25,6 +25,6 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  eventmachine (= 1.0.0.beta.4.1)
+  eventmachine
   sinatra!
   thin
