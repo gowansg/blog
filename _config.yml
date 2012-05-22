@@ -1,1 +1,1 @@
-exclude: config.ru, Gemfile, Gemfile.lock
+exclude: config.ru, Gemfile, Gemfile.lock, vendor, Procfile
