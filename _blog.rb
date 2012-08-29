@@ -8,6 +8,6 @@ set :public_folder, File.join(__FILE__, "_site")
 #end
 
 get '/*' do |path|
-	File.read("_site/#{path}")
+	send_file ("_site/#{path}")
 end
 
