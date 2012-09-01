@@ -1,13 +1,16 @@
 require 'rubygems'
 require 'sinatra'
 
-set :public_folder, File.join(__FILE__, "_site")
+set :public_folder, "_site"
 
 #before do
 	#response.headers['Cache-Control'] = 'public, max-age='
 #end
 
-get '/*' do |path|
-	send_file ("_site/#{path}")
+get '/' do
+	send_file 'index.html'
 end
 
+get '*' do |path|
+	send_file File.join(settings.public_folder, request.path)
+end
