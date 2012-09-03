@@ -12,5 +12,6 @@ get '/' do
 end
 
 get '*' do |path|
-	send_file File.join(settings.public_folder, request.path)
+	send_file File.join(settings.public_folder, path.downcase!)
 end
+
