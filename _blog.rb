@@ -15,3 +15,6 @@ get '*' do |path|
 	send_file File.join(settings.public_folder, path.downcase!)
 end
 
+error 404 do
+	send_file '404.html'
+end
