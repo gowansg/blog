@@ -1,1 +1,2 @@
 exclude: config.ru, Gemfile, Gemfile.lock, vendor, Procfile
+permalink: pretty
