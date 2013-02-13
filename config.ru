@@ -10,11 +10,11 @@ class BlogServer < Sinatra::Base
 
   get '*' do |url|
     url.downcase!
-    url << '/' unless url [-1] == '/' 
-    url << 'index.html' unless url[-10] == 'index.html'
-    url = settings.public_folder + url
-    puts "Request : " + url
-    send_file(url)
+    unless url.end_with? "/index.html"
+      url << '/' unless url [-1] == '/'
+      url << 'index.html' unless url[-10] == 'index.html'
+    end
+    send_file(settings.public_folder + url)
   end
 
   not_found do
