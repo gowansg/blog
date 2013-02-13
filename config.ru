@@ -13,7 +13,7 @@ class BlogServer < Sinatra::Base
     url << '/' unless url [-1] == '/' 
     url << 'index.html' unless url[-10] == 'index.html'
     url = settings.public_folder + url
-    puts url
+    puts "Request : " + url
     send_file(url)
   end
 
